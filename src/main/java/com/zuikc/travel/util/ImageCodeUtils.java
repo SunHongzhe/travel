@@ -67,8 +67,8 @@ public class ImageCodeUtils {
 
         // 图像buffer
         BufferedImage buffImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-//        Graphics g = buffImg.getGraphics();
-        Graphics2D g = buffImage.createGraphics();
+        Graphics g = buffImage.getGraphics();
+//        Graphics2D g = buffImage.createGraphics();
         // 设置背景色
         g.setColor(getRandColor(200, 250));
         g.fillRect(0, 0, width, height);
